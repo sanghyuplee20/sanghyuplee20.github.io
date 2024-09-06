@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div style={{ backgroundColor: 'black', color: 'white' }}>
       {/* First section: 3D Text */}
-      <div style={{ height: '100vh', backgroundColor: 'black' }} className="home">
+      <div style={{ height: '100vh', position: 'relative', backgroundColor: 'black' }} className="home">
         <Canvas camera={{ position: [0, 0, 10], fov: 60 }}>
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />
@@ -32,6 +32,18 @@ const Home = () => {
           {/* Orbit Controls for interaction */}
           <OrbitControls enableZoom={false} />
         </Canvas>
+
+        {/* Comment at the bottom right corner */}
+        <div style={{
+          position: 'absolute',
+          bottom: '40px',
+          right: '40px',
+          color: 'white',
+          fontSize: '40px',
+          fontStyle: 'italic',
+        }}>
+          Try dragging me around
+        </div>
       </div>
 
       {/* Second section: About Me */}

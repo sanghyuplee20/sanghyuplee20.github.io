@@ -5,6 +5,28 @@
   font-style: normal;
 }
 
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: white black;
+}
+
+
+
 /* Apply the font globally */
 body {
   font-family: 'HelveticaNeueRoman', Arial, sans-serif;
@@ -25,6 +47,7 @@ nav {
   top: 0;
   z-index: 1000;
   padding: 20px;
+  margin-bottom: 40px;
 }
 
 nav ul {

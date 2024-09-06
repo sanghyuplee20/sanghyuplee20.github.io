@@ -15,6 +15,7 @@ function App() {
         <Route path="/" element={<Navigate to="/home" />} />
         {/* Define the /home route for the Home component */}
         <Route path="/home" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </Router>
   );

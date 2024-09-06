@@ -1,38 +1,75 @@
+@font-face {
+  font-family: 'HelveticaNeueRoman';
+  src: url('./fonts/HelveticaNeueMedium.ttf') format('truetype'); /* Use format('truetype') for .ttf */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the font globally */
+body {
+  font-family: 'HelveticaNeueRoman', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background-color: black;
+  font-family: 'HelveticaNeueRoman', sans-serif;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+nav ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+nav ul li a {
   color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  overflow: hidden; /* Ensure underline stays within the bounds */
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li a::after {
+  content: ''; /* Pseudo-element to create the underline */
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Position the underline just below the text */
+  width: 0; /* Start with a width of 0 (hidden) */
+  height: 2px; /* Height of the underline */
+  background-color: white; /* Color of the underline */
+  transition: width 0.4s ease; /* Smooth animation for both enter and exit */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li a:hover::after {
+  width: 100%; /* Expand the underline on hover */
+}
+
+nav ul li a::after {
+  transition: width 0.4s ease-in-out; /* Make it smooth in both directions */
+}
+
+
+.home {
+  padding: 0;
+  background-color: black;
 }

@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a0b130be.css",
+    "main.js": "/static/js/main.90451a33.js",
+    "static/media/RareTrades.png": "/static/media/RareTrades.97f2f757ec0f685eaccb.png",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.a0b130be.css",
+    "static/js/main.90451a33.js"
+  ]
+}

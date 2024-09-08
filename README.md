@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Sanghyup Lee Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a personal portfolio website showcasing Sanghyup Lee's professional experience, skills, and projects. The website features an interactive 3D home section and a responsive design with smooth navigation across different sections.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **3D Text Interaction**: Home section includes interactive 3D text built using Three.js and React Three Fiber.
+- **Dynamic Projects**: Showcases key projects, each project card dynamically displays details and links to GitHub repositories.
+- **Resume Viewer**: Integrated PDF viewer for viewing the resume directly on the site.
+- **Experiences Section**: Highlights past internships, research roles, and key contributions in various fields.
+- **Footer with Social Links**: Social media and GitHub links presented with icons in the footer.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React.js**: For building the frontend UI.
+- **React Router**: For managing navigation between different sections (Home, Projects, Resume, Experiences).
+- **Three.js & @react-three/fiber**: For 3D interactions in the Home section.
+- **CSS**: Custom styling for the website with a black-and-white theme.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sanghyuplee20/portfolio-website.git
+   cd portfolio-website
+   ```
 
-### `npm run build`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Run the application:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open your browser and go to `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Folder Structure
 
-### `npm run eject`
+- `src/components`: Contains the React components like `Home`, `Projects`, `Resume`, `Experiences`, and `Navbar`.
+- `public/fonts`: Stores custom fonts (e.g., HelveticaNeueRoman.ttf) for use across the site.
+- `src/App.js`: The main file that manages routes and includes global components like the Navbar and Footer.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Future Enhancements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Add animations and transitions between sections for smoother navigation.
+- Implement more detailed project showcases with live demos.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

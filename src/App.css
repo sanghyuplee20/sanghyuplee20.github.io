@@ -1,8 +1,144 @@
-@font-face {
-  font-family: 'HelveticaNeueRoman';
-  src: url('./fonts/HelveticaNeueMedium.ttf') format('truetype'); /* Use format('truetype') for .ttf */
-  font-weight: normal;
-  font-style: normal;
+/* General Styles */
+body {
+  font-family: 'HelveticaNeueRoman', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Title styling */
+.page-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Experience section styling */
+.experience-item {
+  margin: 40px 0;
+  font-size: 1.25rem;
+}
+
+.experience-date {
+  font-size: 1rem; /* Same size for the date */
+  color: #ccc; /* Lighter color for date to make it less prominent */
+}
+
+.experience-description {
+  font-size: 1.2rem; /* Larger font size for better visibility */
+  line-height: 1.6; /* Add some line height for readability */
+  color: white; /* Keep descriptions fully visible */
+}
+
+/* Navbar styling */
+nav {
+  background-color: black;
+  font-family: 'HelveticaNeueRoman', sans-serif;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+}
+
+.icon {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #007bff;
+}
+
+/* Ensure footer sticks at the bottom if the page doesn't require scrolling */
+html, body {
+  min-height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  padding-bottom: 60px; /* Height of the footer */
+  box-sizing: border-box;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 60px; /* Footer height */
 }
 
 /* Scrollbar Styles */
@@ -23,76 +159,4 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: white black;
-}
-
-
-
-/* Apply the font globally */
-body {
-  font-family: 'HelveticaNeueRoman', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.App {
-  text-align: center;
-}
-
-nav {
-  background-color: black;
-  font-family: 'HelveticaNeueRoman', sans-serif;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  padding: 20px;
-  margin-bottom: 40px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-nav ul li {
-  margin: 0 1rem;
-  position: relative;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  position: relative;
-  overflow: hidden; /* Ensure underline stays within the bounds */
-}
-
-nav ul li a::after {
-  content: ''; /* Pseudo-element to create the underline */
-  position: absolute;
-  left: 0;
-  bottom: -5px; /* Position the underline just below the text */
-  width: 0; /* Start with a width of 0 (hidden) */
-  height: 2px; /* Height of the underline */
-  background-color: white; /* Color of the underline */
-  transition: width 0.4s ease; /* Smooth animation for both enter and exit */
-}
-
-nav ul li a:hover::after {
-  width: 100%; /* Expand the underline on hover */
-}
-
-nav ul li a::after {
-  transition: width 0.4s ease-in-out; /* Make it smooth in both directions */
-}
-
-
-.home {
-  padding: 0;
-  background-color: black;
 }

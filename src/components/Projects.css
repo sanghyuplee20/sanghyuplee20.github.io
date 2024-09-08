@@ -1,53 +1,63 @@
 .projects-container {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    color: white;
-    margin-bottom: 20px;
-  }
-  
-  .projects-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .project-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .project-card:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  h2 {
-    font-size: 1.8rem;
-    color: #222;
-  }
-  
-  p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  .project-links a {
-    color: #007bff;
-    text-decoration: none;
-    margin-right: 10px;
-    font-weight: bold;
-  }
-  
-  .project-links a:hover {
-    text-decoration: underline;
-  }
-  
+  text-align: center;
+  padding-top: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden; /* Ensures nothing overflows from the card */
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Adding image styling */
+.project-image {
+  width: 100%; /* Makes the image fill the width of the card */
+  height: auto; /* Keeps the aspect ratio */
+  max-width: 100%; /* Prevents it from overflowing the card */
+  border-radius: 8px; /* Adds rounded corners to the image */
+  margin-bottom: 15px;
+  object-fit: cover; /* Ensures the image maintains aspect ratio inside its container */
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #222;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.project-links a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}

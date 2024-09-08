@@ -2,8 +2,8 @@ import React from 'react';
 
 const Resume = () => {
   return (
-    <div style={{ height: '100vh', textAlign: 'center', backgroundColor: 'black' }}>
-      <h1 style={{ color: 'white', marginTop: '80px' }}>Resume</h1> {/* Add some margin here */}
+    <div style={{ height: '100vh', textAlign: 'center', backgroundColor: 'black', marginBottom: "40px"}}>
+      <h1 style={{ color: 'white', paddingTop: "40px"}}>Resume</h1> {/* Add some margin here */}
       <iframe
         src="/Sanghyup_Lee_Resume.pdf"
         width="36%"

@@ -1,0 +1,51 @@
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1; /* Keep footer above most content, adjust as needed */
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+}
+
+.icon {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: rgb(51, 163, 255);
+}
+
+/* Ensures the footer sticks at the bottom if the page content is shorter than the viewport */
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  min-height: 100vh;
+  padding-bottom: 60px; /* Footer height */
+  box-sizing: border-box; /* Ensures padding-bottom is included in height */
+}
+
+/* Ensure footer is always at the bottom of the page */
+body::after {
+  content: '';
+  display: block;
+  height: 60px; /* Height of the footer */
+}

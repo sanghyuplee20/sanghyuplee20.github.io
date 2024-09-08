@@ -1,34 +1,35 @@
 import React from 'react';
 
 const Experiences = () => {
-  return (
-    <div style={{ padding: '100px 20px', textAlign: 'center', backgroundColor: 'black', color: 'white' }} id="experiences">
-      <h1>Experiences</h1>
-      <div style={{ margin: '20px 0' }}>
-        <h3>Teaching Assistant - Johns Hopkins University</h3>
-        <p>
-          Aug 2023 - Present <br />
-          • Assisted students in understanding probability concepts and solving complex problems.<br />
-          • Conducted office hours, review sessions, and grading assignments to support student success.
-        </p>
-      </div>
-      <div style={{ margin: '20px 0' }}>
-        <h3>Simulation Engineer Intern - Samsung SDI</h3>
-        <p>
-          June 2022 - Aug 2022 <br />
-          • Worked on the Digital Twin project within the Simulation Team.<br />
-          • Developed simulation models to optimize production processes and increase efficiency.
-        </p>
-      </div>
-      <div style={{ margin: '20px 0' }}>
-        <h3>Side Projects and Hackathons</h3>
-        <p>
-          • Developed various side projects including a trading application and interactive 3D applications using React and Three.js.<br />
-          • Participated in hackathons such as the Patient Safety Technology Challenge, focusing on building solutions that improve patient care and safety.
-        </p>
-      </div>
-    </div>
-  );
+    return (
+        <div style={{ textAlign: 'center', backgroundColor: 'black', color: 'white', paddingTop: "40px" }} id="experiences">
+            <h1 className="page-title">Experiences</h1>
+            <div className="experience-item">
+                <h3>Software Engineering Intern - Samsung SDS</h3>
+                <p className="experience-date">May 2024 - August 2024</p>
+                <p className="experience-description">
+                    • Collaborated closely with the RPA Solutions team to implement advanced prompt engineering techniques.<br />
+                    • Created and curated 100 sample data sets for use as examples, improving model's applicability and training efficiency.<br />
+                    • Generated vectors from chunked data and applied cosine similarity search to enhance query augmentation.
+                </p>
+            </div>
+            <div className="experience-item">
+                <h3>Software Developer Intern - Mintech</h3>
+                <p className="experience-date">July 2023 - August 2023</p>
+                <p className="experience-description">
+                    • Created a profile page in a mobile application utilizing the Flutter framework for exercise routine tracking.<br />
+                    • Collaborated with Yonsei University's departments, assisting in research for post-colorectal cancer patient exercise routines.
+                </p>
+            </div>
+            <div className="experience-item">
+                <h3>Research Assistant - Yonsei University, Fluid Track</h3>
+                <p className="experience-date">July 2021 - August 2021</p>
+                <p className="experience-description">
+                    • Worked on a health tracking application using Unity, making health monitoring more interactive for pediatric patients.
+                </p>
+            </div>
+        </div>
+    );
 };
 
 export default Experiences;

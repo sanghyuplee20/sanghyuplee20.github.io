@@ -50,6 +50,3 @@ This project is a personal portfolio website showcasing Sanghyup Lee's professio
 - Add animations and transitions between sections for smoother navigation.
 - Implement more detailed project showcases with live demos.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

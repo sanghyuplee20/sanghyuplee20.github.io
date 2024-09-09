@@ -6,7 +6,7 @@ const Experiences = () => {
             <h1 className="page-title">Experiences</h1>
             <div className="experience-item">
                 <h3>Software Engineering Intern - Samsung SDS</h3>
-                <p className="experience-date">May 2024 - August 2024</p>
+                <p className="experience-date">June 2024 - August 2024</p>
                 <p className="experience-description">
                     • Collaborated closely with the RPA Solutions team to implement advanced prompt engineering techniques.<br />
                     • Created and curated 100 sample data sets for use as examples, improving model's applicability and training efficiency.<br />

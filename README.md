@@ -1,6 +1,6 @@
 # Sanghyup Lee Portfolio
 
-This project is a personal portfolio website showcasing Sanghyup Lee's professional experience, skills, and projects. The website features an interactive 3D home section and a responsive design with smooth navigation across different sections.
+The website features an interactive 3D home section and a responsive design with smooth navigation across different sections.
 
 ## Features
 
@@ -44,9 +44,3 @@ This project is a personal portfolio website showcasing Sanghyup Lee's professio
 - `src/components`: Contains the React components like `Home`, `Projects`, `Resume`, `Experiences`, and `Navbar`.
 - `public/fonts`: Stores custom fonts (e.g., HelveticaNeueRoman.ttf) for use across the site.
 - `src/App.js`: The main file that manages routes and includes global components like the Navbar and Footer.
-
-## Future Enhancements
-
-- Add animations and transitions between sections for smoother navigation.
-- Implement more detailed project showcases with live demos.
-

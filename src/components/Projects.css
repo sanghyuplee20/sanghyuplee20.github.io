@@ -24,7 +24,7 @@ h1 {
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  overflow: hidden; /* Ensures nothing overflows from the card */
+  overflow: hidden; 
 }
 
 .project-card:hover {
@@ -33,12 +33,12 @@ h1 {
 
 /* Adding image styling */
 .project-image {
-  width: 100%; /* Makes the image fill the width of the card */
-  height: auto; /* Keeps the aspect ratio */
-  max-width: 100%; /* Prevents it from overflowing the card */
-  border-radius: 8px; /* Adds rounded corners to the image */
+  width: 100%; 
+  height: auto; 
+  max-width: 100%; 
+  border-radius: 8px;
   margin-bottom: 15px;
-  object-fit: cover; /* Ensures the image maintains aspect ratio inside its container */
+  object-fit: cover; 
 }
 
 h2 {

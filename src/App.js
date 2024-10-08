@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import './App.css';
 import Experiences from './components/Experiences';
 import Footer from './components/Footer';
-
+import About from './components/About';
 function App() {
   return (
     <div className="App">
@@ -17,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/experiences" element={<Experiences />} />

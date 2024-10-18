@@ -9,13 +9,6 @@ const projectsData = [
         "A full-stack card trading application built with React, Node.js, Express.js, and PostgreSQL. The app allows users to trade cards with dynamic price visualizations.",
       image: rareTradesImage, // Add the image to the project data
     },
-    {
-      title: "Cache Simulation",
-      description:
-        "A C++ cache simulation that supports write-allocate, no-write-allocate, write-back, and write-through techniques, along with adjustable cache parameters.",
-    //   liveLink: "",
-    //   githubLink: "",
-    },
   ];
   
   const Projects = () => {

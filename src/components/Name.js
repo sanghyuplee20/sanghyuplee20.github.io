@@ -46,7 +46,13 @@ export default function Name() {
 
   return (
     <>
-      <OrbitControls makeDefault />
+      <OrbitControls 
+        makeDefault 
+        enableZoom={true} 
+        minDistance={2}   
+        maxDistance={10}
+        enablePan = { false } 
+      />
       <directionalLight />
       <ambientLight intensity={0.75} />
       <pointLight position={[10, 10, 10]} />
